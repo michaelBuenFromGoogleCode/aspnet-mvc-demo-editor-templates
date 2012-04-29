@@ -1,0 +1,17 @@
+﻿@model SoQna.ViewModels.QnaViewModel
+
+@{
+    ViewBag.Title = "SubmitAnswers";
+}
+
+<h2>SubmitAnswers</h2>
+
+
+@foreach (var item in Model.Answers)
+{
+    @: Answer to question: @item.QuestionText
+    <br />    
+    @item.AnswerText
+
+    <hr />
+}

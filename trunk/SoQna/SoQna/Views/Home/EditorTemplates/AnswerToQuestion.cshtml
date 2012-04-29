@@ -1,0 +1,11 @@
+﻿@model SoQna.ViewModels.AnswerToQuestion
+
+Question #@(Model.ToQuestionId) <br />
+@Html.HiddenFor(x => x.ToQuestionId)
+@Html.DisplayFor(x => x.QuestionText)
+
+<br />
+
+@Html.TextAreaFor(x => x.AnswerText)
+
+<hr />

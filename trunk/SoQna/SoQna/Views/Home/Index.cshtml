@@ -1,0 +1,13 @@
+﻿@model SoQna.ViewModels.QnaViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@using (Html.BeginForm("SubmitAnswers", "Home" ))
+{    
+    @Html.EditorFor(x => x.Answers) 
+    <input type="submit" value="Done" />
+}
+
